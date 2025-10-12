@@ -140,7 +140,7 @@ section#products h2 {
 
 .product img {
   width: 100%;
-  height: 220px;
+  height: 250px; /* uniform height */
   object-fit: cover;
   border-radius: 12px;
   transition: transform 0.3s ease;
@@ -215,41 +215,4 @@ footer .social-icons {
 footer .social-icons a img {
   width: 35px;
   height: 35px;
-  transition: transform 0.3s ease;
-}
-
-footer .social-icons a img:hover {
-  transform: scale(1.2);
-}
-
-footer p {
-  margin-top: 10px;
-  font-size: 0.95rem;
-}
-
-/* ===== About / Hero / Products Images ===== */
-.about-section img,
-#hero img,
-.product img {
-  transition: all 0.3s ease;
-}
-
-/* ===== Responsive ===== */
-@media (max-width: 1024px) {
-  header { padding: 15px 30px; }
-  .hero-text h1 { font-size: 2.8rem; }
-  .hero-text p { font-size: 1.2rem; }
-}
-
-@media (max-width: 768px) {
-  .hero-text h1 { font-size: 2.4rem; }
-  .hero-text p { font-size: 1rem; }
-  .product img { height: 200px; }
-}
-
-@media (max-width: 480px) {
-  header { flex-direction: column; gap: 10px; }
-  .hero-text h1 { font-size: 1.8rem; }
-  .hero-text p { font-size: 0.95rem; }
-  .product img { height: 160px; }
-}
+  transition: transform 0.3s ease
