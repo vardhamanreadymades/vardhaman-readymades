@@ -1,1 +1,5 @@
- 
+
+User-agent: *
+Allow: /
+
+Sitemap: https://vardhamanreadymades.github.io/vardhaman-readymades/sitemap.xml
