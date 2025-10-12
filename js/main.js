@@ -1,5 +1,7 @@
-// Smooth scroll for “Shop Now” button
-document.querySelector('.btn').addEventListener('click', function(e){
-  e.preventDefault();
-  document.querySelector('#products').scrollIntoView({behavior: 'smooth'});
+// Smooth scroll for internal links
+document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+  anchor.addEventListener('click', function(e) {
+    e.preventDefault();
+    document.querySelector(this.getAttribute('href')).scrollIntoView({ behavior: 'smooth' });
+  });
 });
